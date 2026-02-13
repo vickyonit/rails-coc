@@ -244,28 +244,41 @@ end
 
 ## Additional Resources
 
-For complete Rails conventions documentation, see the Rails CoC files in this repository:
+For complete Rails conventions documentation, see the Rails CoC files:
 
-- [01-naming-conventions.md](../01-naming-conventions.md) - Complete naming guide
-- [02-project-structure.md](../02-project-structure.md) - Directory layout and organization
-- [03-models-activerecord.md](../03-models-activerecord.md) - Model conventions and patterns
-- [04-controllers.md](../04-controllers.md) - Controller best practices
-- [05-views-templates.md](../05-views-templates.md) - View conventions
-- [06-routing.md](../06-routing.md) - Routing patterns
-- [07-database-migrations.md](../07-database-migrations.md) - Migration conventions
-- [08-testing-conventions.md](../08-testing-conventions.md) - Testing best practices
-- [09-configuration-environments.md](../09-configuration-environments.md) - Configuration patterns
-- [10-security.md](../10-security.md) - Security conventions
-- [11-api-conventions.md](../11-api-conventions.md) - API development
-- [12-background-jobs.md](../12-background-jobs.md) - Active Job patterns
-- [13-action-mailer.md](../13-action-mailer.md) - Mailer conventions
-- [14-action-cable.md](../14-action-cable.md) - WebSocket patterns
-- [15-active-storage.md](../15-active-storage.md) - File handling
-- [16-assets-frontend.md](../16-assets-frontend.md) - Frontend asset management
-- [17-code-style.md](../17-code-style.md) - Ruby code style
-- [18-advanced-patterns.md](../18-advanced-patterns.md) - Advanced Rails patterns
-- [19-performance.md](../19-performance.md) - Performance optimization
-- [20-deployment-devops.md](../20-deployment-devops.md) - Deployment practices
+**If working in the Rails CoC repository:**
+- Read files from the repository root: `01-naming-conventions.md`, `02-project-structure.md`, etc.
+
+**If installed as a skill (standalone):**
+- Access the complete documentation at: https://github.com/vickyonit/rails-coc
+- Or clone the repository and reference files locally
+
+**Detailed guides available:**
+- 01-naming-conventions.md - Complete naming guide (classes, files, databases, variables, routes, methods, modules, constants)
+- 02-project-structure.md - Directory layout, file organization, autoloading, Zeitwerk, engines
+- 03-models-activerecord.md - Associations, validations, callbacks, scopes, enums, STI, polymorphism, queries
+- 04-controllers.md - RESTful actions, filters, strong params, concerns, error handling, rendering
+- 05-views-templates.md - ERB/Haml, partials, layouts, helpers, view components, Turbo/Stimulus
+- 06-routing.md - RESTful routes, nested resources, namespaces, constraints, concerns
+- 07-database-migrations.md - Migrations, schema design, seeds, indexes, foreign keys, data migrations
+- 08-testing-conventions.md - Minitest, RSpec, fixtures, factories, system tests, CI practices
+- 09-configuration-environments.md - Credentials, environment configs, initializers, locales, logging
+- 10-security.md - CSRF, SQL injection, XSS, authentication, authorization, content security
+- 11-api-conventions.md - API mode, versioning, serialization, pagination, rate limiting, documentation
+- 12-background-jobs.md - Job conventions, queues, retries, scheduling, idempotency
+- 13-action-mailer.md - Mailer naming, views, previews, delivery, interceptors
+- 14-action-cable.md - Channels, connections, subscriptions, broadcasting
+- 15-active-storage.md - Attachments, variants, direct uploads, services
+- 16-assets-frontend.md - Importmaps, Propshaft, jsbundling, cssbundling, Hotwire
+- 17-code-style.md - Ruby idioms, formatting, Rubocop, method design, error handling
+- 18-advanced-patterns.md - Service objects, form objects, query objects, decorators, concerns, POROs
+- 19-performance.md - N+1 queries, caching, eager loading, database optimization, profiling
+- 20-deployment-devops.md - Kamal, Docker, CI/CD, monitoring, logging, environment management
+
+**When you need detailed information:**
+- If working in the Rails CoC repository, read the specific markdown file directly
+- If the repository is cloned locally, read from the cloned location
+- Otherwise, reference the GitHub repository or search the web for the specific convention
 
 ## Rails Version
 
