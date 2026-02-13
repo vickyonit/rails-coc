@@ -4,21 +4,37 @@ This skill helps AI agents (like Cursor, Codex, etc.) follow Rails conventions a
 
 ## Installation
 
-### For Cursor Users
+**📖 See [INSTALLATION.md](INSTALLATION.md) for detailed installation instructions.**
 
-1. Copy this skill directory to your Cursor skills folder:
-   ```bash
-   cp -r .cursor/skills/rails-conventions ~/.cursor/skills/rails-conventions
-   ```
+### Quick Install Options
 
-2. The skill will be automatically available in Cursor.
+**Option 1: Project-Level (Recommended for Teams)**
+```bash
+cd /path/to/your/rails-project
+mkdir -p .cursor/skills
+cp -r /path/to/rails-coc/.cursor/skills/rails-conventions .cursor/skills/
+# Commit to your repository so team members have access
+git add .cursor/skills/
+git commit -m "Add Rails Conventions skill"
+```
 
-### For Other Agents
+**Option 2: Global (Available Across All Projects)**
+```bash
+git clone https://github.com/vickyonit/rails-coc.git ~/rails-coc
+cp -r ~/rails-coc/.cursor/skills/rails-conventions ~/.cursor/skills/rails-conventions
+```
 
-If you're using a different AI coding assistant that supports skills:
+**Option 3: Direct from GitHub**
+```bash
+cd /path/to/your/rails-project
+mkdir -p .cursor/skills
+git clone --depth 1 --filter=blob:none --sparse https://github.com/vickyonit/rails-coc.git temp-clone
+cd temp-clone && git sparse-checkout set .cursor/skills/rails-conventions
+cd .. && mv temp-clone/.cursor/skills/rails-conventions .cursor/skills/
+rm -rf temp-clone
+```
 
-1. Copy the `.cursor/skills/rails-conventions` directory to your agent's skills location
-2. Follow your agent's documentation for skill installation
+For more installation options and troubleshooting, see [INSTALLATION.md](INSTALLATION.md).
 
 ## What This Skill Does
 
