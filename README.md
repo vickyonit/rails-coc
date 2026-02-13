@@ -44,6 +44,17 @@ This guide targets **Rails 7.1+** with notes for **Rails 8.0** where applicable.
 - **Code review checklist?** — Files 17, 19, 10 are your go-to references
 - **Scaling up?** — Files 18, 19, 12, 20 cover advanced patterns
 
+## 🤖 AI Agent Skill
+
+This repository includes a **Rails Conventions Skill** for AI coding assistants (Cursor, Codex, etc.) that helps agents follow Rails conventions automatically.
+
+**Installation:**
+```bash
+cp -r .cursor/skills/rails-conventions ~/.cursor/skills/rails-conventions
+```
+
+See [.cursor/skills/rails-conventions/README.md](./.cursor/skills/rails-conventions/README.md) for details.
+
 ---
 
 ## The Golden Rules of Rails
